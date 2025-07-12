@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Project-01",
+    "stages": [
+      { "name": "Conceptualize", "percent": 100 },
+      { "name": "Initialize", "percent": 100 },
+      { "name": "Sprint 1", "percent": 100 },
+      { "name": "Sprint 2", "percent": 30 },
+      { "name": "Sprint 3", "percent": 0 },
+      { "name": "Sprint 4", "percent": 0 },
+      { "name": "Sprint 5", "percent": 0 },
+      { "name": "Sprint 6", "percent": 0 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Project-02",
+    "stages": [
+      { "name": "Conceptualize", "percent": 60 },
+      { "name": "Initialize", "percent": 0 },
+      { "name": "Sprint 1", "percent": 0 },
+      { "name": "Sprint 2", "percent": 0 },
+      { "name": "Sprint 3", "percent": 0 },
+      { "name": "Sprint 4", "percent": 0 },
+      { "name": "Sprint 5", "percent": 0 },
+      { "name": "Sprint 6", "percent": 0 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Project-03",
+    "stages": [
+      { "name": "Conceptualize", "percent": 100 },
+      { "name": "Initialize", "percent": 100 },
+      { "name": "Sprint 1", "percent": 60 },
+      { "name": "Sprint 2", "percent": 0 },
+      { "name": "Sprint 3", "percent": 0 },
+      { "name": "Sprint 4", "percent": 0 },
+      { "name": "Sprint 5", "percent": 0 },
+      { "name": "Sprint 6", "percent": 0 }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Project-04",
+    "stages": [{ "name": "Conceptualize", "percent": 100 },
+        { "name": "Initialize", "percent": 100 },
+        { "name": "Sprint 1", "percent": 0 },
+        { "name": "Sprint 2", "percent": 0 },
+        { "name": "Sprint 3", "percent": 0 },
+        { "name": "Sprint 4", "percent": 0 },
+        { "name": "Sprint 5", "percent": 0 },
+        { "name": "Sprint 6", "percent": 0 }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Project-05",
+    "stages": [{ "name": "Conceptualize", "percent": 70 },
+    { "name": "Initialize", "percent": 100 },
+      { "name": "Sprint 1", "percent": 100 },
+      { "name": "Sprint 2", "percent": 100 },
+      { "name": "Sprint 3", "percent": 100 },
+      { "name": "Sprint 4", "percent": 30 },
+      { "name": "Sprint 5", "percent": 0 },
+      { "name": "Sprint 6", "percent": 0 }
+   ]
+  },
+  {
+    "id": 6,
+    "name": "Project-06",
+    "stages": [{ "name": "Conceptualize", "percent": 90 },
+    { "name": "Initialize", "percent": 100 },
+    { "name": "Sprint 1", "percent": 100 },
+    { "name": "Sprint 2", "percent": 100 },
+    { "name": "Sprint 3", "percent": 30 },
+    { "name": "Sprint 4", "percent": 0 },
+    { "name": "Sprint 5", "percent": 0 },
+    { "name": "Sprint 6", "percent": 0 }]
+  },
+  {
+    "id": 7,
+    "name": "Project-07",
+    "stages": [{ "name": "Conceptualize", "percent": 75 },
+    { "name": "Initialize", "percent": 100 },
+    { "name": "Sprint 1", "percent": 100 },
+    { "name": "Sprint 2", "percent": 30 },
+    { "name": "Sprint 3", "percent": 0 },
+    { "name": "Sprint 4", "percent": 0 },
+    { "name": "Sprint 5", "percent": 0 },
+    { "name": "Sprint 6", "percent": 0 }]
+  },
+  {
+    "id": 8,
+    "name": "Project-08",
+    "stages": [{ "name": "Conceptualize", "percent": 0 },
+    { "name": "Initialize", "percent": 0 },
+    { "name": "Sprint 1", "percent": 0 },
+    { "name": "Sprint 2", "percent": 0 },
+    { "name": "Sprint 3", "percent": 0 },
+    { "name": "Sprint 4", "percent": 0 },
+    { "name": "Sprint 5", "percent": 0 },
+    { "name": "Sprint 6", "percent": 0 }]
+  },
+  {
+    "id": 9,
+    "name": "Project-09",
+    "stages": [{ "name": "Conceptualize", "percent": 100 },
+    { "name": "Initialize", "percent": 100 },
+    { "name": "Sprint 1", "percent": 60 },
+    { "name": "Sprint 2", "percent": 0 },
+    { "name": "Sprint 3", "percent": 0 },
+    { "name": "Sprint 4", "percent": 0 },
+    { "name": "Sprint 5", "percent": 0 },
+    { "name": "Sprint 6", "percent": 0 }]
+  },
+  {
+    "id": 10,
+    "name": "Project-10",
+    "stages": [{ "name": "Conceptualize", "percent": 100 },
+    { "name": "Initialize", "percent": 30 },
+    { "name": "Sprint 1", "percent": 0 },
+    { "name": "Sprint 2", "percent": 0 },
+    { "name": "Sprint 3", "percent": 0 },
+    { "name": "Sprint 4", "percent": 0 },
+    { "name": "Sprint 5", "percent": 0 },
+    { "name": "Sprint 6", "percent": 0 }]
+  }
+]
