@@ -1,7 +1,7 @@
-.custom-progress .ant-progress-bg {
-  border-radius: 1px !important; /* or 0px to remove curve entirely */
+.ant-progress .ant-progress-bg {
+  border-radius: 0px !important;
 }
 
-.custom-progress-outer .ant-progress-outer {
-  border-radius: 1px !important;
+.ant-progress .ant-progress-inner {
+  border-radius: 3px !important;
 }
