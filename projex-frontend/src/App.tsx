@@ -5,10 +5,12 @@ import ProjectDetails from './pages/projectDetails';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<ProjectInventory />} />
-      <Route path="/project/:id" element={<ProjectDetails />} />
-    </Routes>
+    <div className="bg-lightGrayBg">
+      <Routes>
+        <Route path="/" element={<ProjectInventory />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
+      </Routes>
+    </div>
   );
 }
 

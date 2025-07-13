@@ -2,14 +2,22 @@ import { Card, Button } from 'antd';
 import { Key } from 'react';
 import { SettingFilled } from '@ant-design/icons';
 
-const ProjectDetailsSprintNotes = () => {
-    return(
-        <Card title="Sprint Notes" extra={<Button className='cursor-pointer'><SettingFilled/></Button>} variant="borderless">
-          <p>Card content</p>
-          <p>Card content</p>
-          <p>Card content</p>
-        </Card>
-    );
-}
+const ProjectDetailsSprintNotes = (props: any) => {
+  const { project } = props;
 
-export default ProjectDetailsSprintNotes
+  return (
+    <Card
+      title="Sprint Notes"
+      extra={
+        <Button className="cursor-pointer">
+          <SettingFilled />
+        </Button>
+      }
+      variant="borderless"
+    >
+      <p>{project.hasOwnProperty('sprint_notes') ? project['sprint_notes'] : ''}</p>
+    </Card>
+  );
+};
+
+export default ProjectDetailsSprintNotes;

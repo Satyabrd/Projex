@@ -5,3 +5,13 @@
 .ant-progress .ant-progress-inner {
   border-radius: 3px !important;
 }
+
+.custom-divider-left {
+  border-left: 1px solid #ccc; /* subtle divider */
+}
+
+.project-grid {
+  .ant-card-body {
+    padding: 12px;
+  }
+}

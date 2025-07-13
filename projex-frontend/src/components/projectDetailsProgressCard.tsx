@@ -4,45 +4,54 @@ import { SettingFilled } from '@ant-design/icons';
 
 const ProjectDetailsProgressCard = (props: any) => {
   const { project } = props;
-  console.log("project is::",project)
   const conceptualize = project.stages.find((s: { name: string }) => s.name === 'Conceptualize');
   const initialize = project.stages.find((s: { name: string }) => s.name === 'Initialize');
   const sprints = project.stages.filter((s: { name: string }) => s.name.startsWith('Sprint'));
 
   return (
-    <Card title="Project Progress" extra={<Button className='cursor-pointer'><SettingFilled/></Button>} variant="borderless">
-      <div key={project.id} className="grid grid-cols-12 gap-0 items-center text-sm ml-5 mr-5 mb-2 progress-bar">
-        {/* Conceptualize Stage */}
+    <Card
+      title="Project Progress"
+      extra={
+        <Button className="cursor-pointer">
+          <SettingFilled />
+        </Button>
+      }
+      variant="borderless"
+    >
+      <div className="grid grid-cols-12 gap-x-2 items-center text-sm mx-5 mb-4">
+        {/* Conceptualize */}
         <div className="col-span-3 text-center">
-    <Progress
-      percent={conceptualize?.percent ?? 0}
-      size={[300, 30]}
-      strokeColor={'#3B82F6'}
-      showInfo={false}
-    />
-    <div className="mt-1 text-xs text-blue-500">Conceptualize</div>
-  </div>
+          <Progress
+            percent={conceptualize?.percent ?? 0}
+            showInfo={false}
+            size={[undefined, 30]}
+            strokeColor="#3B82F6"
+            className="w-full"
+          />
+          <div className="mt-1 text-xs text-blue-500">Conceptualize</div>
+        </div>
 
-        {/* Initialize Stage */}
-        <div className="col-span-3">
+        {/* Initialize */}
+        <div className="col-span-3 text-center">
           <Progress
             percent={initialize?.percent ?? 0}
-            size={[300, 30]}
-            strokeColor={'#F97316'}
             showInfo={false}
+            size={[undefined, 30]}
+            strokeColor="#F97316"
+            className="w-full"
           />
           <div className="mt-1 text-xs text-orange-500">Initialize</div>
         </div>
 
-        {/* Sprint Progress Bars */}
+        {/* Sprints */}
         {sprints.map((sprint: { percent: any }, idx: Key | null | undefined) => (
-          <div className="col-span-1" key={idx}>
+          <div className="col-span-1 text-center" key={idx}>
             <Progress
-              className="custom-progress"
               percent={sprint.percent ?? 0}
-              size={[115, 30]}
-              strokeColor={'#10B981'}
               showInfo={false}
+              size={[undefined, 30]}
+              strokeColor="#10B981"
+              className="w-full"
             />
             <div className="mt-1 text-xs text-emerald-500">Sprint {Number(idx) + 1}</div>
           </div>

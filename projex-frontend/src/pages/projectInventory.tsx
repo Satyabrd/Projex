@@ -1,16 +1,17 @@
 import { PlusCircleFilled } from '@ant-design/icons';
 import ProjectGrid from '@/components/projectGrid';
+import { Card } from 'antd';
 
 const ProjectInventory = () => {
   return (
     <>
-      <div className="p-4">
-        <div className="flex items-center justify-between border-b pb-2">
+      <Card variant="borderless">
+        <div className="flex items-center justify-between border-b">
           <h1 className="text-2xl font-bold text-gray-800">Projects Pipeline</h1>
           <PlusCircleFilled style={{ color: 'blue', fontSize: '2rem', cursor: 'pointer' }} />
         </div>
-      </div>
-      <div className="ml-10 mr-10">
+      </Card>
+      <Card>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="w-3 h-3 bg-conceptualize rounded-full"></span>
@@ -27,7 +28,7 @@ const ProjectInventory = () => {
             <span className="text-xs">Experiment: MVP development, Iterative testing</span>
           </div>
         </div>
-      </div>
+      </Card>
       <ProjectGrid />
     </>
   );
