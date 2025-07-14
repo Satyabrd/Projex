@@ -1,5 +1,4 @@
 import { Card, Button } from 'antd';
-import { Key } from 'react';
 import { SettingFilled } from '@ant-design/icons';
 
 const ProjectDetailsSprintNotes = (props: any) => {

@@ -18,4 +18,5 @@ class ProjectStage(Base):
 
     #Back reference to project
     project = relationship("Project", back_populates="stages")
+    sprints = relationship("ProjectSprint", back_populates="stage", cascade="all, delete")
     

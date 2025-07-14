@@ -1,4 +1,3 @@
-import { Card } from 'antd';
 import ProjectDetailsProgressCard from '@/components/projectDetailsProgressCard';
 import ProjectDetailsInformation from '@/components/projectDetailsInformation';
 import ProjectDetailsSprintNotes from '@/components/projectDetailsSprintNotes';

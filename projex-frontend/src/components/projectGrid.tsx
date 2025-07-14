@@ -14,13 +14,15 @@ interface Project {
   stages: Stage[];
 }
 
-const ProjectGrid = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
+const ProjectGrid = (props: { projects: any }) => {
+  //const [projects, setProjects] = useState<Project[]>([]);
   const navigate = useNavigate();
+  const { projects } = props;
+  console.log('projects are::', projects);
 
-  useEffect(() => {
+  /*useEffect(() => {
     setProjects(ProjectData);
-  }, []);
+  }, []);*/
 
   const handleClick = (project: any) => {
     navigate(`/project/${project}`, { state: { project } });
@@ -58,7 +60,7 @@ const ProjectGrid = () => {
               className="grid grid-cols-12 gap-0 items-center text-sm ml-5 mr-5 mb-2 "
             >
               {/* Project Name */}
-              <div className="col-span-2 font-semibold whitespace-nowrap cursor-pointer">
+              <div className="col-span-4 font-semibold whitespace-nowrap cursor-pointer">
                 <span className="text-blue-600" onClick={() => handleClick(project)}>
                   {' '}
                   P{i + 1}. {project.name}{' '}
@@ -66,20 +68,20 @@ const ProjectGrid = () => {
               </div>
 
               {/* Conceptualize Stage */}
-              <div className="col-span-2">
+              <div className="col-span-1">
                 <Progress
                   percent={conceptualize?.percent ?? 0}
-                  size={[undefined, 20]}
+                  size={[undefined, 25]}
                   strokeColor={'#3B82F6'}
                   showInfo={false}
                 />
               </div>
 
               {/* Initialize Stage */}
-              <div className="col-span-2 ml-2 mr-2">
+              <div className="col-span-1 ml-2 mr-2">
                 <Progress
                   percent={initialize?.percent ?? 0}
-                  size={[undefined, 20]}
+                  size={[undefined, 25]}
                   strokeColor={'#F97316'}
                   showInfo={false}
                 />
@@ -91,7 +93,7 @@ const ProjectGrid = () => {
                   <Progress
                     className="custom-progress"
                     percent={sprint.percent ?? 0}
-                    size={[undefined, 20]}
+                    size={[undefined, 25]}
                     strokeColor={'#10B981'}
                     showInfo={false}
                   />
