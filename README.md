@@ -17,15 +17,15 @@ If we don't connect to postgresql db, then there's a json file from where data l
 Start project:
 ============================
 **frontend:**
-    - cd projex-fronend
-    - npm run dev
+- cd projex-fronend
+- npm run dev
 
 **backend:**
-    - cd projex-backend/app
-    - python main.py
+- cd projex-backend/app
+- python main.py
 
 **api looks like below:**
-    - curl --location --request GET 'http://localhost:8000/api/v1/projects'
+- curl --location --request GET 'http://localhost:8000/api/v1/projects'
 
 Future works:
 ============================
