@@ -3,8 +3,8 @@ Techstack:
 ==========================
 React, vite, fastapi, python, postgresql
 
-Redux: It can be implemented also, but for this small 2 page it felt like a drag, context themes can be implemented but didn't keep it as a priority
-Next: next can be used but assignment was mentioned in pure react , so SSR didn't use.
+- **Redux:** It can be implemented also, but for this small 2 page it felt like a drag, context themes can be implemented but didn't keep it as a priority
+- **Next:** next can be used but assignment was mentioned in pure react , so SSR didn't use.
 
 Pending works:
 ========================
@@ -16,16 +16,16 @@ If we don't connect to postgresql db, then there's a json file from where data l
 
 Start project:
 ============================
-frontend:
-    cd projex-fronend
-    npm run dev
+**frontend:**
+    - cd projex-fronend
+    - npm run dev
 
-backend:
-    cd projex-backend/app
-    python main.py
+**backend:**
+    - cd projex-backend/app
+    - python main.py
 
-api looks like below:
-    curl --location --request GET 'http://localhost:8000/api/v1/projects'
+**api looks like below:**
+    - curl --location --request GET 'http://localhost:8000/api/v1/projects'
 
 Future works:
 ============================
