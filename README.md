@@ -13,6 +13,23 @@ Fallback:
 ==========================
 If we don't connect to postgresql db, then there's a json file from where data ll be loaded
 
+Start project:
+============================
+frontend:
+    cd projex-fronend
+    npm run dev
+
+backend:
+    cd projex-backend/app
+    python main.py
+
+api looks like below:
+    curl --location --request GET 'http://localhost:8000/api/v1/projects'
+
+Future works:
+============================
+Docker, github actions, terraform are future plans after completing all integration work
+
 ![Project Inventory Page](./demo-pages/Inventory_page.png)
 
 ![Project Creation Modal](./demo-pages/Add_project_modal.png)
