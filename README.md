@@ -3,6 +3,7 @@ Techstack:
 ==========================
 React, vite, fastapi, python, postgresql
 
+Redux: It can be implemented also, but for this small 2 page it felt like a drag, context themes can be implemented but didn't keep it as a priority
 Next: next can be used but assignment was mentioned in pure react , so SSR didn't use.
 
 Pending works:
