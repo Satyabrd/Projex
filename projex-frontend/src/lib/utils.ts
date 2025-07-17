@@ -27,3 +27,56 @@ export function convertProjectToDisplayGrid(
 
   return result;
 }
+
+export function buildProjectPayload(values) {
+  const { projectname, description, technology, business_function } = values;
+  console.log('valuess are::', projectname, description, technology, business_function);
+  const now = new Date().toISOString(); // full datetime timestamp
+
+  const sprintsForExperiment = Array.from({ length: 6 }, (_, i) => ({
+    name: `Sprint ${i + 1}`,
+    completion_percentage: 0,
+    sprint_notes: null,
+    start_date: null,
+    end_date: null,
+  }));
+
+  const stages = [
+    {
+      name: 'Conceptualize',
+      completion_percentage: 0,
+      stage_notes: 'Define problem and scope',
+      start_date: null,
+      end_date: null,
+      sprints: [],
+    },
+    {
+      name: 'Initialize',
+      completion_percentage: 0,
+      stage_notes: 'Set up tools and environment',
+      start_date: null,
+      end_date: null,
+      sprints: [],
+    },
+    {
+      name: 'Experiment',
+      completion_percentage: 0,
+      stage_notes: 'Prototype and test ideas',
+      start_date: null,
+      end_date: null,
+      sprints: sprintsForExperiment,
+    },
+  ];
+
+  const projectPayload = {
+    projectname,
+    description,
+    technology,
+    business_function,
+    initiation_date: now,
+    creation_date: now,
+    stages,
+  };
+
+  return projectPayload;
+}

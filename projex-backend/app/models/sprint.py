@@ -1,6 +1,7 @@
-from sqlalchemy import Column, Integer, String, Text, Date, ForeignKey 
+from sqlalchemy import Column, Integer, String, Text, Date, ForeignKey, DateTime
 from sqlalchemy.orm import relationship
 from db.base import Base 
+
 
 class ProjectSprint(Base):
     __tablename__ = 'project_sprints'
@@ -13,8 +14,8 @@ class ProjectSprint(Base):
 
     completion_percentage = Column(Integer, nullable=True)
     sprint_notes = Column(Text)
-    start_date = Column(Date)
-    end_date = Column(Date)
+    start_date = Column(DateTime)
+    end_date = Column(DateTime)
 
     #Back reference to project
     stage = relationship("ProjectStage", back_populates="sprints")

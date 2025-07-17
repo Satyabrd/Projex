@@ -4,6 +4,7 @@ from api.v1 import project
 from db.init_db import init_db
 from core.cors import setup_cors
 import uvicorn
+from fastapi.middleware.cors import CORSMiddleware
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):

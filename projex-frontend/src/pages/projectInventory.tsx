@@ -38,10 +38,20 @@ const ProjectInventory = () => {
     }
   };
 
-  const onSubmit = async projectName => {
-    const res = await axios.post('http://localhost:8000/api/v1/projects', projectName);
-    console.log('res is::', res);
-    await fetchProjects();
+  const onSubmit = async values => {
+    try {
+      const response = await axios.post('http://localhost:8000/api/v1/projects', values);
+
+      if (response.status === 201 || response.status === 200) {
+        console.log('Project created successfully:', response.data);
+        await fetchProjects(); // assuming you want to add to the list
+      } else {
+        console.warn('Unexpected response:', response);
+      }
+    } catch (error) {
+      console.error('Error while creating project:', error);
+      // Optionally show user feedback here
+    }
   };
 
   return (

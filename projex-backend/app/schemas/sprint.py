@@ -1,27 +1,19 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import Optional
-from datetime import date
+from datetime import datetime
 
-# Shared base
 class SprintBase(BaseModel):
     name: str
-    completion_percentage: Optional[int] = Field(None, ge=0, le=100)
+    completion_percentage: Optional[int] = None
     sprint_notes: Optional[str] = None
-    start_date: Optional[date] = None
-    end_date: Optional[date] = None
+    start_date: Optional[datetime] = None
+    end_date: Optional[datetime] = None
 
-# For creating a sprint
 class SprintCreate(SprintBase):
-    stage_id: int
-
-# For updating a sprint
-class SprintUpdate(SprintBase):
     pass
 
-# For reading a sprint (from DB)
 class SprintRead(SprintBase):
     id: int
-    stage_id: int
 
     class Config:
         orm_mode = True

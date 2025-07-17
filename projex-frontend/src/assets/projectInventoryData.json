@@ -1,184 +1,524 @@
 [
   {
+    "projectname": "Project-01",
+    "description": "My first project",
+    "technology": "Python",
+    "business_function": "Make something smarter",
+    "initiation_date": "2025-07-17T22:57:26.806000+05:30",
+    "creation_date": "2025-07-17T22:57:26.806000+05:30",
     "id": 1,
-    "name": "Project-01",
     "stages": [
-      { "name": "Conceptualize", "percent": 100 },
-      { "name": "Initialize", "percent": 100 },
-      { "name": "Sprint 1", "percent": 100 },
-      { "name": "Sprint 2", "percent": 30 },
-      { "name": "Sprint 3", "percent": 0 },
-      { "name": "Sprint 4", "percent": 0 },
-      { "name": "Sprint 5", "percent": 0 },
-      { "name": "Sprint 6", "percent": 0 }
-    ],
-    "technology": "Technology_Information",
-    "business_function": "Business_Function_Info",
-    "initiation_date": "01-Feb-2025",
-    "sprint_start": "01-Apr-2025",
-    "sprint_notes": "01-Apr-2025 sprint started"
+      {
+        "name": "Conceptualize",
+        "completion_percentage": 0,
+        "stage_notes": "Define problem and scope",
+        "start_date": null,
+        "end_date": null,
+        "id": 1,
+        "sprints": []
+      },
+      {
+        "name": "Initialize",
+        "completion_percentage": 0,
+        "stage_notes": "Set up tools and environment",
+        "start_date": null,
+        "end_date": null,
+        "id": 2,
+        "sprints": []
+      },
+      {
+        "name": "Experiment",
+        "completion_percentage": 0,
+        "stage_notes": "Prototype and test ideas",
+        "start_date": null,
+        "end_date": null,
+        "id": 3,
+        "sprints": [
+          {
+            "name": "Sprint 1",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 1
+          },
+          {
+            "name": "Sprint 2",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 2
+          },
+          {
+            "name": "Sprint 3",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 3
+          },
+          {
+            "name": "Sprint 4",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 4
+          },
+          {
+            "name": "Sprint 5",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 5
+          },
+          {
+            "name": "Sprint 6",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 6
+          }
+        ]
+      }
+    ]
   },
   {
+    "projectname": "Project-01",
+    "description": "My first project",
+    "technology": "Python",
+    "business_function": "Make something smarter",
+    "initiation_date": "2025-07-17T22:57:26.806000+05:30",
+    "creation_date": "2025-07-17T22:57:26.806000+05:30",
     "id": 2,
-    "name": "Project-02",
     "stages": [
-      { "name": "Conceptualize", "percent": 60 },
-      { "name": "Initialize", "percent": 0 },
-      { "name": "Sprint 1", "percent": 0 },
-      { "name": "Sprint 2", "percent": 0 },
-      { "name": "Sprint 3", "percent": 0 },
-      { "name": "Sprint 4", "percent": 0 },
-      { "name": "Sprint 5", "percent": 0 },
-      { "name": "Sprint 6", "percent": 0 }
-    ],
-    "technology": "Technology_Information",
-    "business_function": "Business_Function_Info",
-    "initiation_date": "01-Feb-2025",
-    "sprint_start": "01-Apr-2025",
-    "sprint_notes": "01-Apr-2025 sprint started"
+      {
+        "name": "Conceptualize",
+        "completion_percentage": 0,
+        "stage_notes": "Define problem and scope",
+        "start_date": null,
+        "end_date": null,
+        "id": 4,
+        "sprints": []
+      },
+      {
+        "name": "Initialize",
+        "completion_percentage": 0,
+        "stage_notes": "Set up tools and environment",
+        "start_date": null,
+        "end_date": null,
+        "id": 5,
+        "sprints": []
+      },
+      {
+        "name": "Experiment",
+        "completion_percentage": 0,
+        "stage_notes": "Prototype and test ideas",
+        "start_date": null,
+        "end_date": null,
+        "id": 6,
+        "sprints": [
+          {
+            "name": "Sprint 1",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 7
+          },
+          {
+            "name": "Sprint 2",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 8
+          },
+          {
+            "name": "Sprint 3",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 9
+          },
+          {
+            "name": "Sprint 4",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 10
+          },
+          {
+            "name": "Sprint 5",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 11
+          },
+          {
+            "name": "Sprint 6",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 12
+          }
+        ]
+      }
+    ]
   },
   {
+    "projectname": "Project-01",
+    "description": "My first project",
+    "technology": "Python",
+    "business_function": "Make something smarter",
+    "initiation_date": "2025-07-17T22:57:26.806000+05:30",
+    "creation_date": "2025-07-17T22:57:26.806000+05:30",
     "id": 3,
-    "name": "Project-03",
     "stages": [
-      { "name": "Conceptualize", "percent": 100 },
-      { "name": "Initialize", "percent": 100 },
-      { "name": "Sprint 1", "percent": 60 },
-      { "name": "Sprint 2", "percent": 0 },
-      { "name": "Sprint 3", "percent": 0 },
-      { "name": "Sprint 4", "percent": 0 },
-      { "name": "Sprint 5", "percent": 0 },
-      { "name": "Sprint 6", "percent": 0 }
-    ],
-    "technology": "Technology_Information",
-    "business_function": "Business_Function_Info",
-    "initiation_date": "01-Feb-2025",
-    "sprint_start": "01-Apr-2025"
+      {
+        "name": "Conceptualize",
+        "completion_percentage": 0,
+        "stage_notes": "Define problem and scope",
+        "start_date": null,
+        "end_date": null,
+        "id": 7,
+        "sprints": []
+      },
+      {
+        "name": "Initialize",
+        "completion_percentage": 0,
+        "stage_notes": "Set up tools and environment",
+        "start_date": null,
+        "end_date": null,
+        "id": 8,
+        "sprints": []
+      },
+      {
+        "name": "Experiment",
+        "completion_percentage": 0,
+        "stage_notes": "Prototype and test ideas",
+        "start_date": null,
+        "end_date": null,
+        "id": 9,
+        "sprints": [
+          {
+            "name": "Sprint 1",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 13
+          },
+          {
+            "name": "Sprint 2",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 14
+          },
+          {
+            "name": "Sprint 3",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 15
+          },
+          {
+            "name": "Sprint 4",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 16
+          },
+          {
+            "name": "Sprint 5",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 17
+          },
+          {
+            "name": "Sprint 6",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 18
+          }
+        ]
+      }
+    ]
   },
   {
+    "projectname": "Project-01",
+    "description": "My first project",
+    "technology": "Python",
+    "business_function": "Make something smarter",
+    "initiation_date": "2025-07-17T22:57:26.806000+05:30",
+    "creation_date": "2025-07-17T22:57:26.806000+05:30",
     "id": 4,
-    "name": "Project-04",
     "stages": [
-      { "name": "Conceptualize", "percent": 100 },
-      { "name": "Initialize", "percent": 100 },
-      { "name": "Sprint 1", "percent": 0 },
-      { "name": "Sprint 2", "percent": 0 },
-      { "name": "Sprint 3", "percent": 0 },
-      { "name": "Sprint 4", "percent": 0 },
-      { "name": "Sprint 5", "percent": 0 },
-      { "name": "Sprint 6", "percent": 0 }
-    ],
-    "technology": "Technology_Information",
-    "business_function": "Business_Function_Info",
-    "initiation_date": "01-Feb-2025",
-    "sprint_start": "01-Apr-2025"
+      {
+        "name": "Conceptualize",
+        "completion_percentage": 0,
+        "stage_notes": "Define problem and scope",
+        "start_date": null,
+        "end_date": null,
+        "id": 10,
+        "sprints": []
+      },
+      {
+        "name": "Initialize",
+        "completion_percentage": 0,
+        "stage_notes": "Set up tools and environment",
+        "start_date": null,
+        "end_date": null,
+        "id": 11,
+        "sprints": []
+      },
+      {
+        "name": "Experiment",
+        "completion_percentage": 0,
+        "stage_notes": "Prototype and test ideas",
+        "start_date": null,
+        "end_date": null,
+        "id": 12,
+        "sprints": [
+          {
+            "name": "Sprint 1",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 19
+          },
+          {
+            "name": "Sprint 2",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 20
+          },
+          {
+            "name": "Sprint 3",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 21
+          },
+          {
+            "name": "Sprint 4",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 22
+          },
+          {
+            "name": "Sprint 5",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 23
+          },
+          {
+            "name": "Sprint 6",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 24
+          }
+        ]
+      }
+    ]
   },
   {
+    "projectname": "Project-01",
+    "description": "My first project",
+    "technology": "Python",
+    "business_function": "Make something smarter",
+    "initiation_date": "2025-07-17T22:57:26.806000+05:30",
+    "creation_date": "2025-07-17T22:57:26.806000+05:30",
     "id": 5,
-    "name": "Project-05",
     "stages": [
-      { "name": "Conceptualize", "percent": 70 },
-      { "name": "Initialize", "percent": 100 },
-      { "name": "Sprint 1", "percent": 100 },
-      { "name": "Sprint 2", "percent": 100 },
-      { "name": "Sprint 3", "percent": 100 },
-      { "name": "Sprint 4", "percent": 30 },
-      { "name": "Sprint 5", "percent": 0 },
-      { "name": "Sprint 6", "percent": 0 }
-    ],
-    "technology": "Technology_Information",
-    "business_function": "Business_Function_Info",
-    "initiation_date": "01-Feb-2025",
-    "sprint_start": "01-Apr-2025"
+      {
+        "name": "Conceptualize",
+        "completion_percentage": 0,
+        "stage_notes": "Define problem and scope",
+        "start_date": null,
+        "end_date": null,
+        "id": 13,
+        "sprints": []
+      },
+      {
+        "name": "Initialize",
+        "completion_percentage": 0,
+        "stage_notes": "Set up tools and environment",
+        "start_date": null,
+        "end_date": null,
+        "id": 14,
+        "sprints": []
+      },
+      {
+        "name": "Experiment",
+        "completion_percentage": 0,
+        "stage_notes": "Prototype and test ideas",
+        "start_date": null,
+        "end_date": null,
+        "id": 15,
+        "sprints": [
+          {
+            "name": "Sprint 1",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 25
+          },
+          {
+            "name": "Sprint 2",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 26
+          },
+          {
+            "name": "Sprint 3",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 27
+          },
+          {
+            "name": "Sprint 4",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 28
+          },
+          {
+            "name": "Sprint 5",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 29
+          },
+          {
+            "name": "Sprint 6",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 30
+          }
+        ]
+      }
+    ]
   },
   {
+    "projectname": "Project-01",
+    "description": "My first project",
+    "technology": "Python",
+    "business_function": "Make something smarter",
+    "initiation_date": "2025-07-17T22:57:26.806000+05:30",
+    "creation_date": "2025-07-17T22:57:26.806000+05:30",
     "id": 6,
-    "name": "Project-06",
     "stages": [
-      { "name": "Conceptualize", "percent": 90 },
-      { "name": "Initialize", "percent": 100 },
-      { "name": "Sprint 1", "percent": 100 },
-      { "name": "Sprint 2", "percent": 100 },
-      { "name": "Sprint 3", "percent": 30 },
-      { "name": "Sprint 4", "percent": 0 },
-      { "name": "Sprint 5", "percent": 0 },
-      { "name": "Sprint 6", "percent": 0 }
-    ],
-    "technology": "Technology_Information",
-    "business_function": "Business_Function_Info",
-    "initiation_date": "01-Feb-2025",
-    "sprint_start": "01-Apr-2025"
-  },
-  {
-    "id": 7,
-    "name": "Project-07",
-    "stages": [
-      { "name": "Conceptualize", "percent": 75 },
-      { "name": "Initialize", "percent": 100 },
-      { "name": "Sprint 1", "percent": 100 },
-      { "name": "Sprint 2", "percent": 30 },
-      { "name": "Sprint 3", "percent": 0 },
-      { "name": "Sprint 4", "percent": 0 },
-      { "name": "Sprint 5", "percent": 0 },
-      { "name": "Sprint 6", "percent": 0 }
-    ],
-    "technology": "Technology_Information",
-    "business_function": "Business_Function_Info",
-    "initiation_date": "01-Feb-2025",
-    "sprint_start": "01-Apr-2025"
-  },
-  {
-    "id": 8,
-    "name": "Project-08",
-    "stages": [
-      { "name": "Conceptualize", "percent": 0 },
-      { "name": "Initialize", "percent": 0 },
-      { "name": "Sprint 1", "percent": 0 },
-      { "name": "Sprint 2", "percent": 0 },
-      { "name": "Sprint 3", "percent": 0 },
-      { "name": "Sprint 4", "percent": 0 },
-      { "name": "Sprint 5", "percent": 0 },
-      { "name": "Sprint 6", "percent": 0 }
-    ],
-    "technology": "Technology_Information",
-    "business_function": "Business_Function_Info",
-    "initiation_date": "01-Feb-2025",
-    "sprint_start": "01-Apr-2025"
-  },
-  {
-    "id": 9,
-    "name": "Project-09",
-    "stages": [
-      { "name": "Conceptualize", "percent": 100 },
-      { "name": "Initialize", "percent": 100 },
-      { "name": "Sprint 1", "percent": 60 },
-      { "name": "Sprint 2", "percent": 0 },
-      { "name": "Sprint 3", "percent": 0 },
-      { "name": "Sprint 4", "percent": 0 },
-      { "name": "Sprint 5", "percent": 0 },
-      { "name": "Sprint 6", "percent": 0 }
-    ],
-    "technology": "Technology_Information",
-    "business_function": "Business_Function_Info",
-    "initiation_date": "01-Feb-2025",
-    "sprint_start": "01-Apr-2025"
-  },
-  {
-    "id": 10,
-    "name": "Project-10",
-    "stages": [
-      { "name": "Conceptualize", "percent": 100 },
-      { "name": "Initialize", "percent": 30 },
-      { "name": "Sprint 1", "percent": 0 },
-      { "name": "Sprint 2", "percent": 0 },
-      { "name": "Sprint 3", "percent": 0 },
-      { "name": "Sprint 4", "percent": 0 },
-      { "name": "Sprint 5", "percent": 0 },
-      { "name": "Sprint 6", "percent": 0 }
-    ],
-    "technology": "Technology_Information",
-    "business_function": "Business_Function_Info",
-    "initiation_date": "01-Feb-2025",
-    "sprint_start": "01-Apr-2025"
+      {
+        "name": "Conceptualize",
+        "completion_percentage": 0,
+        "stage_notes": "Define problem and scope",
+        "start_date": null,
+        "end_date": null,
+        "id": 16,
+        "sprints": []
+      },
+      {
+        "name": "Initialize",
+        "completion_percentage": 0,
+        "stage_notes": "Set up tools and environment",
+        "start_date": null,
+        "end_date": null,
+        "id": 17,
+        "sprints": []
+      },
+      {
+        "name": "Experiment",
+        "completion_percentage": 0,
+        "stage_notes": "Prototype and test ideas",
+        "start_date": null,
+        "end_date": null,
+        "id": 18,
+        "sprints": [
+          {
+            "name": "Sprint 1",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 31
+          },
+          {
+            "name": "Sprint 2",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 32
+          },
+          {
+            "name": "Sprint 3",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 33
+          },
+          {
+            "name": "Sprint 4",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 34
+          },
+          {
+            "name": "Sprint 5",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 35
+          },
+          {
+            "name": "Sprint 6",
+            "completion_percentage": 0,
+            "sprint_notes": null,
+            "start_date": null,
+            "end_date": null,
+            "id": 36
+          }
+        ]
+      }
+    ]
   }
 ]

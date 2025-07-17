@@ -1,36 +1,41 @@
 from pydantic import BaseModel
 from typing import Optional, List
-from datetime import date
-from schemas.stage import StageReadWithSprints
+from datetime import datetime
+from schemas.stage import StageCreateWithSprints, StageReadWithSprints
 
-# Shared schema
+# Shared base schema
 class ProjectBase(BaseModel):
-    name: str
+    projectname: str
     description: Optional[str] = None
     technology: Optional[str] = None
     business_function: Optional[str] = None
-    initiation_date: Optional[str] = None  # Use date if storing as date
-    creation_date: Optional[str] = None
+    initiation_date: Optional[datetime] = None
+    creation_date: Optional[datetime] = None
 
-# Schema for creating a project
+# Schema for creating a project (with nested stages and sprints)
 class ProjectCreate(ProjectBase):
-    pass
+    stages: List[StageCreateWithSprints] = []
 
 # Schema for updating a project
 class ProjectUpdate(ProjectBase):
-    pass
+    stages: Optional[List[StageCreateWithSprints]] = None
 
-# Schema for reading a project (with stages optional)
+# Schema for reading a project (basic)
 class ProjectRead(ProjectBase):
     id: int
 
     class Config:
         orm_mode = True
 
-# ProjectOut with nested stages and sprints
+# Schema for outputting a project with nested stages and sprints
 class ProjectOut(ProjectBase):
     id: int
-    stages: List[StageReadWithSprints] = []  # ⬅️ Include nested stages and sprints
+    stages: List[StageReadWithSprints] = []
 
     class Config:
         orm_mode = True
+
+# Optional schema if you want a structured response for deletion
+class ProjectDelete(BaseModel):
+    id: int
+    message: Optional[str] = "Project deleted successfully"

@@ -25,7 +25,7 @@ const ProjectGrid = (props: { projects: any }) => {
   }, []);*/
 
   const handleClick = (project: any) => {
-    navigate(`/project/${project}`, { state: { project } });
+    navigate(`/project/${project.id}`, { state: { project } });
   };
 
   const getProjectGrid = useCallback((): JSX.Element[] => {
@@ -50,7 +50,8 @@ const ProjectGrid = (props: { projects: any }) => {
       const project = projects[i];
       const conceptualize = project.stages.find(s => s.name === 'Conceptualize');
       const initialize = project.stages.find(s => s.name === 'Initialize');
-      const sprints = project.stages.filter(s => s.name.startsWith('Sprint'));
+      const experiment = project.stages.find(s => s.name === 'Experiment');
+      const sprints = experiment?.sprints;
 
       const elem = (
         <div className="mb-3">
@@ -63,7 +64,7 @@ const ProjectGrid = (props: { projects: any }) => {
               <div className="col-span-4 font-semibold whitespace-nowrap cursor-pointer">
                 <span className="text-blue-600" onClick={() => handleClick(project)}>
                   {' '}
-                  P{i + 1}. {project.name}{' '}
+                  P{i + 1}. {project.projectname}{' '}
                 </span>
               </div>
 

@@ -1,21 +1,19 @@
 import { Card, Progress, Button } from 'antd';
 import { Key } from 'react';
 import { SettingFilled } from '@ant-design/icons';
+import ProjectProgressEditButton from './projectDetailsEditButton';
 
 const ProjectDetailsProgressCard = (props: any) => {
   const { project } = props;
   const conceptualize = project.stages.find((s: { name: string }) => s.name === 'Conceptualize');
   const initialize = project.stages.find((s: { name: string }) => s.name === 'Initialize');
-  const sprints = project.stages.filter((s: { name: string }) => s.name.startsWith('Sprint'));
+  const experiment = project.stages.find((s: { name: string }) => s.name === 'Experiment');
+  const sprints = experiment?.sprints;
 
   return (
     <Card
       title="Project Progress"
-      extra={
-        <Button className="cursor-pointer">
-          <SettingFilled />
-        </Button>
-      }
+      extra={<ProjectProgressEditButton sectionName="projectProgress" />}
       variant="borderless"
     >
       <div className="grid grid-cols-12 gap-x-2 items-center text-sm mx-5 mb-4">

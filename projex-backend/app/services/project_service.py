@@ -7,6 +7,7 @@ from schemas.project import ProjectCreate, ProjectUpdate
 # Import model classes (not strings!)
 from models.project import Project
 from models.stage import ProjectStage
+from models.sprint import ProjectSprint
 
 class ProjectService:
 
@@ -44,39 +45,37 @@ class ProjectService:
     @staticmethod
     async def create_project(db: AsyncSession, project_data: ProjectCreate) -> Project:
         # 1. Create the project
-        new_project = Project(**project_data.dict())
-        db.add(new_project)
-        await db.flush()  # To generate project.id
+        project_dict = project_data.model_dump()
+        stages_data = project_dict.pop("stages", [])
 
-        # 2. Define default stages and sprints
-        stages_config = [
-            {"name": "Conceptualize", "sprints": 0},
-            {"name": "Initialize", "sprints": 0},
-            {"name": "Experiment", "sprints": 6}
-        ]
+        # Create Project instance
+        project = Project(**project_dict)
 
-        for stage_cfg in stages_config:
-            stage = ProjectStage(
-                name=stage_cfg["name"],
-                project_id=new_project.id,
-                completion_percentage=0
-            )
-            db.add(stage)
-            await db.flush()  # So we can reference stage.id
+        # Handle nested stages and sprints
+        for stage_data in stages_data:
+            sprints_data = stage_data.pop("sprints", [])
+            stage = ProjectStage(**stage_data)
+            for sprint_data in sprints_data:
+                sprint = ProjectSprint(**sprint_data)
+                stage.sprints.append(sprint)
+            project.stages.append(stage)
 
-            for i in range(1, stage_cfg["sprints"] + 1):
-                sprint = ProjectSprint(
-                    name=f"{stage_cfg['name']} - Sprint {i}",
-                    stage_id=stage.id,
-                    completion_percentage=0
-                )
-                db.add(sprint)
-
-        # 3. Commit all
+        db.add(project)
         await db.commit()
-        await db.refresh(new_project)
+        await db.refresh(project)
+        return project
+    
+    @staticmethod
+    async def delete_project_by_id(db: AsyncSession, project_id: int):
+        result = await db.execute(select(Project).where(Project.id == project_id))
+        project = result.scalars().first()
 
-        return new_project
+        if not project:
+            return None
+
+        await db.delete(project)
+        await db.commit()
+        return True
     
     @staticmethod
     async def update_project(db: AsyncSession, project_id: int, project_data: ProjectUpdate) -> Project:
@@ -92,15 +91,4 @@ class ProjectService:
         await db.commit()
         await db.refresh(project)
         return project
-    
-    @staticmethod
-    async def delete_project(db: AsyncSession, project_id: int) -> None:
-        result = await db.execute(select(Project).where(Project.id == project_id))
-        project = result.scalars().first()
-
-        if not project:
-            raise HTTPException(status_code=404, detail="Project not found")
-
-        await db.delete(project)
-        await db.commit()
 

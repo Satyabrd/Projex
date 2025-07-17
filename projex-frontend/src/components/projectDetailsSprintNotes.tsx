@@ -3,6 +3,7 @@ import { SettingFilled } from '@ant-design/icons';
 
 const ProjectDetailsSprintNotes = (props: any) => {
   const { project } = props;
+  const sectionName = 'sprint';
 
   return (
     <Card

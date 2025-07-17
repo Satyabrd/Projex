@@ -2,6 +2,7 @@ import { PlusCircleFilled } from '@ant-design/icons';
 import type { FormProps } from 'antd';
 import { Form, Modal, Input, Button } from 'antd';
 import { useState } from 'react';
+import { buildProjectPayload } from '@/lib/utils';
 
 type FieldType = {
   projectname?: string;
@@ -21,7 +22,9 @@ const ProjectInventoryTopRow = props => {
 
   const onFinish: FormProps<FieldType>['onFinish'] = values => {
     console.log('Success:', values);
-    props.onSubmit(values.projectname);
+    const payload = buildProjectPayload(values);
+    console.log('payload is::', payload);
+    props.onSubmit(payload);
     setIsModalOpen(false);
   };
 
