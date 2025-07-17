@@ -71,7 +71,7 @@ const ProjectGrid = (props: { projects: any }) => {
               {/* Conceptualize Stage */}
               <div className="col-span-1">
                 <Progress
-                  percent={conceptualize?.percent ?? 0}
+                  percent={conceptualize?.completion_percentage ?? 0}
                   size={[undefined, 25]}
                   strokeColor={'#3B82F6'}
                   showInfo={false}
@@ -81,7 +81,7 @@ const ProjectGrid = (props: { projects: any }) => {
               {/* Initialize Stage */}
               <div className="col-span-1 ml-2 mr-2">
                 <Progress
-                  percent={initialize?.percent ?? 0}
+                  percent={initialize?.completion_percentage ?? 0}
                   size={[undefined, 25]}
                   strokeColor={'#F97316'}
                   showInfo={false}
@@ -93,7 +93,7 @@ const ProjectGrid = (props: { projects: any }) => {
                 <div className={`col-span-1 ${idx > 0 ? 'custom-divider-left' : ''}`} key={idx}>
                   <Progress
                     className="custom-progress"
-                    percent={sprint.percent ?? 0}
+                    percent={sprint.completion_percentage ?? 0}
                     size={[undefined, 25]}
                     strokeColor={'#10B981'}
                     showInfo={false}

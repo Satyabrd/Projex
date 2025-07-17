@@ -10,7 +10,7 @@
     "stages": [
       {
         "name": "Conceptualize",
-        "completion_percentage": 0,
+        "completion_percentage": 50,
         "stage_notes": "Define problem and scope",
         "start_date": null,
         "end_date": null,
@@ -87,7 +87,7 @@
     ]
   },
   {
-    "projectname": "Project-01",
+    "projectname": "Project-02",
     "description": "My first project",
     "technology": "Python",
     "business_function": "Make something smarter",
@@ -97,7 +97,7 @@
     "stages": [
       {
         "name": "Conceptualize",
-        "completion_percentage": 0,
+        "completion_percentage": 100,
         "stage_notes": "Define problem and scope",
         "start_date": null,
         "end_date": null,
@@ -106,7 +106,7 @@
       },
       {
         "name": "Initialize",
-        "completion_percentage": 0,
+        "completion_percentage": 100,
         "stage_notes": "Set up tools and environment",
         "start_date": null,
         "end_date": null,
@@ -123,7 +123,7 @@
         "sprints": [
           {
             "name": "Sprint 1",
-            "completion_percentage": 0,
+            "completion_percentage": 100,
             "sprint_notes": null,
             "start_date": null,
             "end_date": null,
@@ -131,7 +131,7 @@
           },
           {
             "name": "Sprint 2",
-            "completion_percentage": 0,
+            "completion_percentage": 70,
             "sprint_notes": null,
             "start_date": null,
             "end_date": null,
@@ -174,7 +174,7 @@
     ]
   },
   {
-    "projectname": "Project-01",
+    "projectname": "Project-03",
     "description": "My first project",
     "technology": "Python",
     "business_function": "Make something smarter",
@@ -184,7 +184,7 @@
     "stages": [
       {
         "name": "Conceptualize",
-        "completion_percentage": 0,
+        "completion_percentage": 100,
         "stage_notes": "Define problem and scope",
         "start_date": null,
         "end_date": null,
@@ -193,7 +193,7 @@
       },
       {
         "name": "Initialize",
-        "completion_percentage": 0,
+        "completion_percentage": 100,
         "stage_notes": "Set up tools and environment",
         "start_date": null,
         "end_date": null,
@@ -210,7 +210,7 @@
         "sprints": [
           {
             "name": "Sprint 1",
-            "completion_percentage": 0,
+            "completion_percentage": 100,
             "sprint_notes": null,
             "start_date": null,
             "end_date": null,
@@ -218,7 +218,7 @@
           },
           {
             "name": "Sprint 2",
-            "completion_percentage": 0,
+            "completion_percentage": 100,
             "sprint_notes": null,
             "start_date": null,
             "end_date": null,
@@ -226,7 +226,7 @@
           },
           {
             "name": "Sprint 3",
-            "completion_percentage": 0,
+            "completion_percentage": 100,
             "sprint_notes": null,
             "start_date": null,
             "end_date": null,
@@ -234,7 +234,7 @@
           },
           {
             "name": "Sprint 4",
-            "completion_percentage": 0,
+            "completion_percentage": 70,
             "sprint_notes": null,
             "start_date": null,
             "end_date": null,
@@ -261,7 +261,7 @@
     ]
   },
   {
-    "projectname": "Project-01",
+    "projectname": "Project-04",
     "description": "My first project",
     "technology": "Python",
     "business_function": "Make something smarter",
@@ -348,7 +348,7 @@
     ]
   },
   {
-    "projectname": "Project-01",
+    "projectname": "Project-05",
     "description": "My first project",
     "technology": "Python",
     "business_function": "Make something smarter",
@@ -358,7 +358,7 @@
     "stages": [
       {
         "name": "Conceptualize",
-        "completion_percentage": 0,
+        "completion_percentage": 100,
         "stage_notes": "Define problem and scope",
         "start_date": null,
         "end_date": null,
@@ -367,7 +367,7 @@
       },
       {
         "name": "Initialize",
-        "completion_percentage": 0,
+        "completion_percentage": 60,
         "stage_notes": "Set up tools and environment",
         "start_date": null,
         "end_date": null,
@@ -435,7 +435,7 @@
     ]
   },
   {
-    "projectname": "Project-01",
+    "projectname": "Project-06",
     "description": "My first project",
     "technology": "Python",
     "business_function": "Make something smarter",
@@ -445,7 +445,7 @@
     "stages": [
       {
         "name": "Conceptualize",
-        "completion_percentage": 0,
+        "completion_percentage": 10,
         "stage_notes": "Define problem and scope",
         "start_date": null,
         "end_date": null,

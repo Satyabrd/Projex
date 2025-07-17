@@ -23,7 +23,12 @@ const ProjectInventory = () => {
     try {
       const res = await axios.get('http://localhost:8000/api/v1/projects');
       console.log('res is::', res);
-      setProjects(res.data);
+      //if length of project is 0, get the data from json file:
+      if (res.data.length >= 1) {
+        setProjects(res.data);
+      } else {
+        setProjects(ProjectData);
+      }
     } catch (error) {
       console.error('API fetch failed, loading fallback...', error);
 

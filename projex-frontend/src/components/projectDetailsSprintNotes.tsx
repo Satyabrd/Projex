@@ -1,5 +1,6 @@
-import { Card, Button } from 'antd';
-import { SettingFilled } from '@ant-design/icons';
+import { Card } from 'antd';
+import ProjectProgressEditButton from './projectDetailsEditButton';
+import { PROJECT_SECTION_NAMES } from '@/constants/filterKeys';
 
 const ProjectDetailsSprintNotes = (props: any) => {
   const { project } = props;
@@ -8,11 +9,7 @@ const ProjectDetailsSprintNotes = (props: any) => {
   return (
     <Card
       title="Sprint Notes"
-      extra={
-        <Button className="cursor-pointer">
-          <SettingFilled />
-        </Button>
-      }
+      extra={<ProjectProgressEditButton sectionName={PROJECT_SECTION_NAMES.projectSprintNotes} />}
       variant="borderless"
     >
       <p>{project.hasOwnProperty('sprint_notes') ? project['sprint_notes'] : ''}</p>
